@@ -316,9 +316,18 @@ progress {
     background-image: url("images/ankaria.jpg");
     background-position: center;
     background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
 }
 .tryhackme{
     background-image: url("images/tryhackme.png");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+}
+.subnet{
+    background-image: url("images/github.png");
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
