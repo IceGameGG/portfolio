@@ -39,6 +39,7 @@ header a{
     color: #ffffff;
     padding: 15px;
     border-radius: 5px;
+    transition: background-color 0.2s linear;
 }
 header a:hover{
     background-color: #f8b133;
@@ -251,7 +252,7 @@ progress {
 }
 .projet{
     width: 100%;
-    height: 95vh;
+    height: 75vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -334,6 +335,43 @@ progress {
     background-color: #ffffff;
 }
 
+.contact{
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10%;
+}
+.contact ul{
+    width: 70%;
+    list-style: none;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact li{
+    width: 15%;
+
+}
+.contact a{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    border: #DDDDDD solid;
+    color: #DDDDDD;
+    transition: background-color 0.3s ease;
+
+}
+.contact a:hover{
+    background-color: #f8b133;
+}
+
+.contact img{
+    width: 50px;
+}
 
 
 .arrowtop{
@@ -358,5 +396,11 @@ progress {
     padding: 15px;
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
+}
+footer{
+    background-color: #21252b;
+    text-align: center;
+    margin: 0;
+    padding: 1px;
 }
 
