@@ -1,6 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/futura-condensed-extra');
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 body{
     margin: 0;
@@ -130,11 +131,13 @@ h2{
 }
 .formation{
     display: flex;
-    height: 95vh;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    font-size: 2.5vh;
+    font-size: 3vh;
+}
+.formation article{
+    display: flex;
 }
 .formationliste{
     border-left: 4px solid #f8b133;
@@ -150,8 +153,9 @@ h2{
     list-style: none;
     text-align: left;  
     font-weight: 100;  
-    width: 50%; 
+    width: 40%; 
 }
+
 .formation a{
     padding: 10px;
     display: inline-flex;
@@ -222,8 +226,7 @@ h2{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    height: 95vh;
-    font-size: 130%;  
+    font-size: 100%;  
     
 }
 .competence ul{
@@ -238,8 +241,10 @@ h2{
 .competence li{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 20px;
     width: 100%;
 }
 .competence p:nth-child(4n + 1){
@@ -251,8 +256,8 @@ h2{
 
 
 progress {
-    width: 45vh ;
-    height: 50%;
+    width: 50vh ;
+    height: 50px;
     margin: auto 10px;
     padding: 1px;
     background: #444;
@@ -280,8 +285,8 @@ progress::-webkit-progress-value {
 
 
 .projet{
+    max-width: 100%;
     width: 100%;
-    height: 75vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -291,53 +296,54 @@ progress::-webkit-progress-value {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap:nowrap;
+    width: 100%;
 }
 .projet li{
-    margin: 3vh;
-    width: 25%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    max-height: 50vh;
+    margin: 30px;
+    width: 350px;
+    height: 400px;
 
 }
 
 
 .projet article p{
     color: #999999;
-    margin: 10px;
+    margin-bottom: 30px;
     text-align: center;
+    width: 100%;
+    max-width: 100%;
 }
 .projet article{
-    width: 100%;
     text-align: center;
-    background: rgba(33,33,33, .95);
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
+    background: rgba(33,33,33, 1);
+    padding: 10px;
+    height: 80px;
+    font-size: 100%;
+
 }
 .projet h3{
     color: #f8b133;
+    margin: 0;
 }
 .hidden{
-    background-color: rgba(33,33,33, .80);
+    background-color: rgba(33,33,33, .95);
     color:#DDDDDD;
     opacity: 0;
-    max-width: 100%;
-    width: 90%;
-    padding: 5%;
-    border-radius: 0%;
+    max-width: 330px;
+    width: 330px;
+    padding: 10px;
+    height: 280px;
     text-align: justify;
+    border-radius: 0%;
     transition: opacity 0.3s linear;
     margin: 0;
-    
 }
 .hidden a{
     text-decoration: none;
-    color: #bcbcbc;
+    color: #999999;
 }
+
 .hidden:hover{
     opacity: 100;
 }
@@ -346,9 +352,8 @@ progress::-webkit-progress-value {
     background-image: url("images/ankaria.jpg");
     background-position: center;
     background-size: 100%;
-    background-repeat: no-repeat;
-    background-color: #ffffff;
 }
+
 .tryhackme{
     background-image: url("images/tryhackme.png");
     background-position: center;
@@ -364,13 +369,16 @@ progress::-webkit-progress-value {
     background-color: #ffffff;
 }
 
+
+
+
+
+
 .contact{
-    height: 15vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    margin-bottom: 10%;
+    justify-content: space-between; 
 }
 .contact ul{
     width: 70%;
@@ -384,10 +392,11 @@ progress::-webkit-progress-value {
 
 }
 .contact a{
-    width: 100%;
+    width: 130%;
     display: inline-flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 0px 20px;
     text-decoration: none;
     border: #DDDDDD solid;
     color: #DDDDDD;
