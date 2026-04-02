@@ -245,7 +245,7 @@ p {
 .expliste {
     width: min(100%, 760px);
     margin: 0 0 28px;
-    padding: 24px 24px 24px 140px;
+    padding: 24px 24px 24px 168px;
     list-style: none;
     border-left: 4px solid var(--accent);
     border-radius: 0 var(--radius) var(--radius) 0;
@@ -294,13 +294,15 @@ p {
 .event::before {
     position: absolute;
     top: 0;
-    left: -124px;
-    width: 96px;
+    left: -152px;
+    width: 124px;
     content: attr(data-date);
     color: var(--text-soft);
     font-size: 1.1rem;
     font-weight: 100;
     text-align: right;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
 }
 
 .event::after {
@@ -365,8 +367,10 @@ p {
 }
 
 .competence li > p:nth-of-type(2) {
+    flex: 0 0 auto;
     margin-bottom: 0;
     color: var(--accent);
+    white-space: nowrap;
 }
 
 .competence strong {
