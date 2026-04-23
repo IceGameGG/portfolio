@@ -239,6 +239,8 @@ p {
 .exp article {
     display: flex;
     justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
 }
 
 .formationliste,
@@ -493,6 +495,13 @@ progress::-webkit-progress-value {
 .subnet {
     background-image: url("images/github.png");
     background-color: #ffffff;
+}
+
+.honeypot {
+    background:
+        linear-gradient(180deg, rgba(18, 24, 32, 0.2), rgba(18, 24, 32, 0.95)),
+        radial-gradient(circle at top, rgba(248, 177, 51, 0.28), transparent 35%),
+        linear-gradient(135deg, #1d222a 0%, #2b313b 100%);
 }
 
 .contact {
