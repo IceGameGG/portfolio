@@ -495,11 +495,17 @@ progress::-webkit-progress-value {
 .subnet {
     background-image: url("images/euroapi-logo.png");
     background-color: #ffffff;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 .honeypot {
     background-image: url("images/honeypot.png");
     background-color: #ffffff;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 .contact {
