@@ -493,29 +493,13 @@ progress::-webkit-progress-value {
 }
 
 .subnet {
-    background:
-        radial-gradient(circle at 18% 22%, rgba(248, 177, 51, 0.95) 0 8px, transparent 9px),
-        radial-gradient(circle at 50% 18%, rgba(255, 239, 214, 0.92) 0 9px, transparent 10px),
-        radial-gradient(circle at 78% 30%, rgba(248, 177, 51, 0.85) 0 7px, transparent 8px),
-        radial-gradient(circle at 30% 68%, rgba(255, 239, 214, 0.82) 0 8px, transparent 9px),
-        radial-gradient(circle at 72% 74%, rgba(248, 177, 51, 0.92) 0 10px, transparent 11px),
-        linear-gradient(150deg, transparent 0 24%, rgba(255, 239, 214, 0.16) 24.5% 25.5%, transparent 26% 100%),
-        linear-gradient(192deg, transparent 0 39%, rgba(248, 177, 51, 0.18) 39.5% 40.5%, transparent 41% 100%),
-        linear-gradient(122deg, transparent 0 58%, rgba(255, 239, 214, 0.16) 58.5% 59.5%, transparent 60% 100%),
-        radial-gradient(circle at top, rgba(248, 177, 51, 0.18), transparent 42%),
-        linear-gradient(135deg, #151a20 0%, #232a34 52%, #181d24 100%);
-    background-color: #1b2028;
+    background-image: url("images/euroapi-logo.png");
+    background-color: #ffffff;
 }
 
 .honeypot {
-    background:
-        radial-gradient(circle at 50% 18%, rgba(248, 177, 51, 0.9) 0 10px, rgba(248, 177, 51, 0.12) 11px 58px, transparent 59px),
-        radial-gradient(circle at 50% 18%, transparent 0 78px, rgba(248, 177, 51, 0.14) 79px 80px, transparent 81px),
-        radial-gradient(circle at 50% 18%, transparent 0 114px, rgba(255, 239, 214, 0.12) 115px 116px, transparent 117px),
-        linear-gradient(90deg, transparent 49.4%, rgba(255, 239, 214, 0.14) 49.8%, rgba(255, 239, 214, 0.14) 50.2%, transparent 50.6%),
-        linear-gradient(180deg, transparent 0 62%, rgba(18, 24, 32, 0.1) 62%, rgba(18, 24, 32, 0.92) 100%),
-        linear-gradient(135deg, #15191f 0%, #222933 48%, #11161d 100%);
-    background-color: #1a2028;
+    background-image: url("images/honeypot.png");
+    background-color: #ffffff;
 }
 
 .contact {
