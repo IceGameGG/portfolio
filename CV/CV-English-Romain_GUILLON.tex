@@ -1,0 +1,208 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage{iftex}
+\ifPDFTeX
+  \errmessage{This resume must be compiled with LuaLaTeX or XeLaTeX to use the same font as the portfolio}
+\fi
+\usepackage{babel}
+\babelprovide[import, main]{english}
+\usepackage[a4paper,margin=1cm]{geometry}
+\usepackage{fontspec}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{parskip}
+\usepackage{tikz}
+\usepackage[dvipsnames]{xcolor}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\columnsep}{1.1cm}
+\setlength{\leftmargini}{1.3em}
+\setlength{\parskip}{0.28em}
+\setlength{\itemsep}{0.22em}
+\renewcommand{\labelitemi}{\textcolor{PortfolioAccent}{\small$\bullet$}}
+
+\setmainfont{Futura Condensed Extra}[
+  Ligatures=TeX
+]
+\newfontfamily\headingfont{Futura Condensed Extra}[
+  Ligatures=TeX
+]
+
+\definecolor{PortfolioBg}{HTML}{282C34}
+\definecolor{PortfolioPanel}{HTML}{21252B}
+\definecolor{PortfolioText}{HTML}{FFEFD6}
+\definecolor{PortfolioSoft}{HTML}{DDDDDD}
+\definecolor{PortfolioMuted}{HTML}{909090}
+\definecolor{PortfolioAccent}{HTML}{F8B133}
+\definecolor{PortfolioBorder}{HTML}{3B4048}
+
+\pagecolor{PortfolioBg}
+\color{PortfolioText}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=PortfolioAccent,
+  linkcolor=PortfolioAccent
+}
+
+\newcommand{\sectiontitle}[1]{%
+  \vspace{0.68em}%
+  \noindent{\color{PortfolioBorder}\rule{\linewidth}{0.8pt}}\par
+  \vspace{0.95em}%
+  {\headingfont\fontsize{13.5}{13.5}\selectfont\bfseries\color{PortfolioAccent} #1}\par
+  \vspace{0.32em}%
+}
+
+\newcommand{\cventry}[4]{%
+  {\fontsize{10.2}{10.8}\selectfont\bfseries\color{PortfolioSoft} #1}\hfill{\fontsize{9.5}{10}\selectfont\color{PortfolioAccent} #2}\par
+  {\fontsize{9.4}{10.2}\selectfont\itshape\color{PortfolioText} #3}\par
+  {\fontsize{9.15}{10.8}\selectfont\color{PortfolioMuted} #4}\par
+  \vspace{0.58em}
+}
+
+\begin{document}
+
+\fontsize{9.3}{11.1}\selectfont
+\vspace*{-0.6em}
+\noindent
+\begin{minipage}[t]{0.32\textwidth}
+  \vspace{0pt}
+  \noindent\hfill
+    \begin{tikzpicture}
+      \clip (0,0) circle (1.95cm);
+      \node at (0,0) {\includegraphics[width=3.9cm,height=3.9cm]{../images/photo.jpg}};
+      \draw[line width=2pt,color=PortfolioAccent] (0,0) circle (1.95cm);
+    \end{tikzpicture}
+  \hfill\mbox{}
+
+  \vspace{0.25em}
+
+  {\headingfont\fontsize{22.5}{22.5}\selectfont\bfseries Romain GUILLON}
+
+  \vspace{0.2em}
+  {\headingfont\fontsize{9.7}{10.2}\selectfont\color{PortfolioAccent}\mbox{Networks, systems and cybersecurity}}
+
+  \sectiontitle{Contact}
+  {\fontsize{9.8}{10.2}\selectfont\color{PortfolioSoft} Phone}\par
+  {\fontsize{9.1}{10.3}\selectfont\color{PortfolioAccent} 07 68 55 14 22}\par
+  \vspace{0.2em}
+
+  {\fontsize{9.8}{10.2}\selectfont\color{PortfolioSoft} Email}\par
+  {\fontsize{9.05}{10.2}\selectfont\href{mailto:romain.guillon@isima.fr}{romain.guillon@isima.fr}}\par
+  \vspace{0.2em}
+
+  {\fontsize{9.8}{10.2}\selectfont\color{PortfolioSoft} Portfolio}\par
+  {\fontsize{8.85}{10}\selectfont\href{https://rguillon.fr}{rguillon.fr}}\par
+  \vspace{0.2em}
+
+  {\fontsize{9.8}{10.2}\selectfont\color{PortfolioSoft} GitHub}\par
+  {\fontsize{9.05}{10.2}\selectfont\href{https://github.com/IceGameGG}{github.com/IceGameGG}}\par
+
+  \sectiontitle{Skills}
+  \begin{itemize}
+    \item Networking: Cisco, TCP/IP, VPN, addressing, segmentation
+    \item Systems: Linux, Windows, Docker, Git, SQL, Centreon
+    \item Cybersecurity: Stormshield, Fortinet, Metasploit
+    \item Scripting and automation: Bash, Python, PowerShell
+    \item Web: HTML, CSS, JavaScript, PHP, Node.js
+  \end{itemize}
+
+  \sectiontitle{Languages}
+  {\fontsize{9.8}{10.2}\selectfont\color{PortfolioSoft} English}\hfill{\fontsize{9.5}{10}\selectfont\color{PortfolioAccent} C1}\par
+  {\fontsize{9.1}{10.6}\selectfont\color{PortfolioMuted} Able to communicate with native speakers and use technical vocabulary.}\par
+
+  \sectiontitle{Strengths}
+  \begin{itemize}
+    \item Logical mindset
+    \item Self-taught
+    \item Persistent
+    \item Team spirit
+  \end{itemize}
+
+  \sectiontitle{Interests}
+  \begin{itemize}
+    \item Volleyball, running, strength training
+    \item Pentesting and CTF challenges on TryHackMe
+    \item Tooling and automation
+  \end{itemize}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.64\textwidth}
+  \vspace{0pt}
+  {\fontsize{11.6}{14.2}\selectfont\color{PortfolioSoft}
+  Computer engineering student with a background in networks and telecommunications, focused on infrastructure, systems and cybersecurity. I am looking for environments where I can combine technical rigor, automation and information system security.}
+
+  \vspace{0.45em}
+
+  \sectiontitle{Professional Experience}
+  \cventry
+    {Industrial IT apprentice}
+    {Since 2023}
+    {Euroapi}
+    {Operational maintenance, security maintenance, project management and contribution to network infrastructure topics in an industrial environment.}
+
+  \cventry
+    {Academic tutoring}
+    {2023}
+    {Cord\'ee de la r\'eussite, student support, private tutoring}
+    {Support for students, technical popularization, methodological guidance and personalized follow-up.}
+
+  \cventry
+    {Agricultural worker and seasonal jobs}
+    {2019 -- 2022}
+    {Beauregard-l'\'Ev\^eque (63)}
+    {Corn detasseling, agricultural assistance, waste collection and participation in on-site team organization.}
+
+  \cventry
+    {Work experience internship}
+    {2019}
+    {3D Systems -- Riom (63)}
+    {Discovery of a corporate IT department and first immersion in a professional technical environment.}
+
+  \sectiontitle{Education}
+  \cventry
+    {Apprenticeship engineering degree in computer science}
+    {2022 -- 2025}
+    {ISIMA apprenticeship engineering program -- Aubi\`ere (63)}
+    {General computer engineering program: software development, project management, communication and systems.}
+
+  \cventry
+    {University Bachelor of Technology in Networks and Telecommunications}
+    {2022 -- 2025}
+    {IUT Networks and Telecommunications -- Aubi\`ere (63)}
+    {Program focused on networking, systems, telecommunications and cybersecurity.}
+
+  \cventry
+    {French general baccalaureate}
+    {2019 -- 2022}
+    {Lyc\'ee Pierre Jo\"el Bont\'e -- Riom (63)}
+    {Honors. Majors: mathematics, engineering sciences. Electives: advanced mathematics, climbing.}
+
+  \sectiontitle{Projects}
+  \cventry
+    {Design of an industrial network solution}
+    {Apprenticeship}
+    {Main project at Euroapi}
+    {Project management, analysis of the existing environment, needs assessment, project structuring, supplier coordination, network design and monitoring.}
+
+  \cventry
+    {Capture The Flag}
+    {Since 2022}
+    {TryHackMe}
+    {Continuous learning in pentesting, exploitation, enumeration, cryptography and offensive methodology through hands-on training environments.}
+
+  \cventry
+    {Honeypot}
+    {2026}
+    {Personal project}
+    {Creation of a honeypot with graphical analysis of results using Cowrie, Grafana, Prometheus and GeoIP.}
+
+  \cventry
+    {Ankaria}
+    {May -- September 2020}
+    {Minecraft server project}
+    {Contributed to the project's development, discovered Java and gained a first concrete team-based experience on a digital product.}
+\end{minipage}
+
+\end{document}
